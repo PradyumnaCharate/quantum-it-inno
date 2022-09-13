@@ -15,7 +15,7 @@ import { toast,ToastContainer } from 'react-toastify';
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const  { data } = await axios.post('http://localhost:5000/api/contact', {
+      const  { data } = await axios.post('https://quantumit-backend.herokuapp.com/api/contact', {
         name:name,
         email:email,
         mobileNo:mobileNo,
